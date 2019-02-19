@@ -1,0 +1,25 @@
+<template>
+  <div class="w-100 mt-5 d-flex justify-content-center">
+    <div class="spinner" />
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.spinner {
+  height: 60px;
+  width: 60px;
+  border: 10px solid;
+  border-radius: 50px;
+  border-color: #c3c3c3 transparent #c3c3c3 transparent;
+  animation: rotateSpinner 1s infinite;
+}
+
+@keyframes rotateSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+</style>
